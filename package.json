@@ -1,0 +1,11 @@
+{
+  "name": "vibethon-1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail --names \"LANDING,APP\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix craving-scraps\" \"npm run dev --prefix app\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
