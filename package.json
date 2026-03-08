@@ -1,9 +1,12 @@
 {
-  "name": "vibethon-1",
+  "name": "backyard-cafe",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently --kill-others-on-fail --names \"LANDING,APP\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix craving-scraps\" \"npm run dev --prefix app\""
+    "install:landing": "npm install --prefix craving-scraps",
+    "build": "npm install --prefix craving-scraps && npm run build --prefix craving-scraps",
+    "start": "npm run preview --prefix craving-scraps",
+    "dev": "npm run dev --prefix craving-scraps"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"

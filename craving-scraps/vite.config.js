@@ -4,10 +4,16 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5173,
+    port: parseInt(process.env.PORT) || 5173,
+    host: '0.0.0.0',
     fs: {
-      // Allow serving files from one level up (for food images in Vibethon-1)
+      // Allow serving files from one level up (for food images)
       allow: ['..'],
     },
+  },
+  preview: {
+    port: parseInt(process.env.PORT) || 4173,
+    host: '0.0.0.0',
+    allowedHosts: 'all',
   },
 })
