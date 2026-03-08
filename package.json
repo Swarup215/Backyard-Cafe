@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install:landing": "npm install --prefix craving-scraps",
     "build": "npm install --prefix craving-scraps && npm run build --prefix craving-scraps",
-    "start": "npm run preview --prefix craving-scraps",
+    "start": "npx serve craving-scraps/dist --listen tcp://0.0.0.0:$PORT",
     "dev": "npm run dev --prefix craving-scraps"
   },
   "devDependencies": {
