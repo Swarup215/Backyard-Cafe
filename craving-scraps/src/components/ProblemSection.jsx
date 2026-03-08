@@ -23,16 +23,16 @@ export default function ProblemSection() {
   }, []);
 
   return (
-    <section className="problem-section" id="problem" ref={sectionRef} aria-label="The Problem">
-      <span className="section-overline reveal">The Problem</span>
+    <section className="problem-section" id="about" ref={sectionRef} aria-label="About Backyard Café">
+      <span className="section-overline reveal">Our Story</span>
       <h2 className="problem-headline reveal reveal-delay-1">
-        A fridge full of ingredients. Zero ideas.
+        A backyard vibe, in the heart of Sainikpuri.
       </h2>
       <p className="problem-body reveal reveal-delay-2">
-        Every recipe app assumes you already know what you want to cook.
-        They hand you a grocery list and call it inspiration. 
-        Craving &amp; Scraps starts where you actually are — with what's already in your kitchen 
-        and the specific mood you're in right now.
+        Backyard Café is Secunderabad's cozy neighbourhood café where great food meets a relaxed, 
+        welcoming atmosphere. Whether you're stopping in for a quick bite or a long leisurely meal, 
+        we serve handcrafted dishes made with fresh ingredients — all priced for everyday indulgence. 
+        With over 761 happy reviews and a 4.1-star rating, we're the go-to spot for food lovers in Sainikpuri.
       </p>
     </section>
   );

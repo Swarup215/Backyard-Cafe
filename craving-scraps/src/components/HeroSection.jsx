@@ -20,7 +20,7 @@ export default function HeroSection() {
   const [wordmarkRevealed, setWordmarkRevealed] = useState(false);
   const [subtitleRevealed, setSubtitleRevealed] = useState(false);
 
-  const wordmark = 'Craving & Scraps'.split('');
+  const wordmark = 'Backyard Café'.split('');
 
   // Draw a specific frame to canvas using object-fit: cover logic
   const drawFrame = useCallback((index) => {
@@ -139,7 +139,7 @@ export default function HeroSection() {
     <section
       className="hero-scroll-spacer"
       ref={sectionRef}
-      aria-label="Hero — Craving &amp; Scraps"
+      aria-label="Hero — Backyard Café"
     >
       <div className="hero-sticky">
         {/* Canvas for frame-by-frame video playback */}
@@ -150,7 +150,7 @@ export default function HeroSection() {
 
         {/* Text layer */}
         <div className="hero-text">
-          <h1 className="hero-wordmark" aria-label="Craving &amp; Scraps">
+          <h1 className="hero-wordmark" aria-label="Backyard Café">
             {wordmark.map((letter, i) => (
               <span
                 key={i}
@@ -166,8 +166,14 @@ export default function HeroSection() {
           </h1>
 
           <p className={`hero-subtitle${subtitleRevealed ? ' revealed' : ''}`}>
-            Your fridge.&nbsp;&nbsp;Your craving.&nbsp;&nbsp;Your recipe.
+            Good food.&nbsp;&nbsp;Good vibes.&nbsp;&nbsp;Sainikpuri's favourite spot.
           </p>
+
+          <div className={`hero-badges${subtitleRevealed ? ' revealed' : ''}`}>
+            <span className="hero-badge">⭐ 4.1 / 5</span>
+            <span className="hero-badge">Open till 11 PM</span>
+            <span className="hero-badge">₹200 – ₹600</span>
+          </div>
         </div>
       </div>
     </section>

@@ -26,33 +26,56 @@ export default function CTASection() {
       className="cta-section"
       id="cta-section"
       ref={sectionRef}
-      aria-label="Call to action"
+      aria-label="Visit Us"
     >
       <div className="cta-inner">
-        <span className="cta-subheader reveal">Ready to cook?</span>
+        <span className="cta-subheader reveal">Come say hello</span>
         <h2 className="cta-headline reveal reveal-delay-1">
-          Turn what you have into something worth eating.
+          Visit us at Backyard Café.
         </h2>
         <p className="cta-body reveal reveal-delay-1">
-          On the next page, drop in your ingredients, choose a vibe, and our AI generates 
-          a clean, step-by-step recipe in seconds. No grocery run. No guesswork.
+          We're conveniently located in Sainikpuri, Secunderabad. Walk in, sit back, and let 
+          us take care of the rest. Or order online through Swiggy or Zomato — we deliver too!
         </p>
+
         <ul className="cta-bullets reveal reveal-delay-1">
-          <li>Input 3–5 ingredients you already own</li>
-          <li>Select a craving vibe: Comforting, Spicy, Brain Food &amp; more</li>
-          <li>Receive a formatted, easy-to-follow recipe instantly</li>
-          <li>Powered by LLM for smart, adaptive suggestions</li>
+          <li>📍 Plot 24, SriKrish Enclave, Shaili Gardens Main Rd, Sainikpuri, Secunderabad 500087</li>
+          <li>📞 093903 27845</li>
+          <li>⭐ 4.1 / 5 based on 761 reviews</li>
+          <li>⏰ Open today · Closes at 11:00 PM</li>
+          <li>💰 Price range: ₹200 – ₹600</li>
         </ul>
-        <a
-          href="http://localhost:5174"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="cta-btn reveal reveal-delay-2"
-          id="cta-view-app-btn"
-          aria-label="View the recipe app"
-        >
-          View App
-        </a>
+
+        <div className="cta-actions reveal reveal-delay-2">
+          <a
+            href="tel:+919390327845"
+            className="cta-btn"
+            id="cta-call-btn"
+            aria-label="Call Backyard Café"
+          >
+            📞 Call Now
+          </a>
+          <a
+            href="https://www.swiggy.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-btn cta-btn-outline"
+            id="cta-swiggy-btn"
+            aria-label="Order on Swiggy"
+          >
+            Order on Swiggy
+          </a>
+          <a
+            href="https://www.zomato.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-btn cta-btn-outline"
+            id="cta-zomato-btn"
+            aria-label="Order on Zomato"
+          >
+            Order on Zomato
+          </a>
+        </div>
       </div>
     </section>
   );

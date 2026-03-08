@@ -2,19 +2,24 @@ import { useEffect, useRef } from 'react';
 
 const FEATURES = [
   {
-    icon: '🧅',
-    title: 'Drop Your Ingredients',
-    body: 'Tell us what\'s in your fridge. 3 to 5 ingredients is all it takes to get started.',
+    icon: '⭐',
+    title: '4.1 / 5 Rating',
+    body: 'Loved by 761+ guests. We take pride in delivering an experience worth coming back for — every single visit.',
   },
   {
-    icon: '🌶️',
-    title: 'Pick Your Vibe',
-    body: 'Comforting. Spicy & Fast. Brain Food. Choose a mood and let the recipe follow.',
+    icon: '🕐',
+    title: 'Open Until 11 PM',
+    body: 'Whether it\'s a morning coffee or a late-night meal, we\'re open and ready. Come in any time of day.',
   },
   {
-    icon: '🍕',
-    title: 'Get Your Recipe',
-    body: 'A clean, customized recipe built around you — not a grocery list you\'ll never use.',
+    icon: '💰',
+    title: '₹200 – ₹600 Range',
+    body: 'Neighbourhood café prices, restaurant-quality food. Enjoy great meals without breaking the bank.',
+  },
+  {
+    icon: '🛵',
+    title: 'Delivery Available',
+    body: 'Order from the comfort of your home through Swiggy or Zomato and get our delicious food delivered fresh.',
   },
 ];
 
@@ -42,11 +47,11 @@ export default function FeaturesSection() {
   }, []);
 
   return (
-    <section className="features-section" id="how-it-works" aria-label="How It Works">
+    <section className="features-section" id="highlights" aria-label="Why Visit Us">
       <div className="features-inner">
         <div className="features-header">
-          <span className="section-overline">How It Works</span>
-          <h2 className="features-headline">Three steps. One perfect meal.</h2>
+          <span className="section-overline">Why Backyard Café</span>
+          <h2 className="features-headline">What makes us special.</h2>
         </div>
 
         {FEATURES.map((feature, i) => (
